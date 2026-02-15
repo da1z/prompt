@@ -1,6 +1,7 @@
 {
   "name": "@da1z/prompt",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "A super lightweight, fully typesafe string templating library. Built for prompts, useful everywhere.",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -16,8 +17,33 @@
   ],
   "scripts": {
     "build": "tsc",
+    "test": "bun test",
     "prepublishOnly": "bun run build"
   },
+  "keywords": [
+    "prompt",
+    "template",
+    "typesafe",
+    "string-template",
+    "typescript",
+    "llm",
+    "ai",
+    "zero-dependency"
+  ],
+  "author": "da1z",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/da1z/prompt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/da1z/prompt/issues"
+  },
+  "homepage": "https://github.com/da1z/prompt#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
   "devDependencies": {
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/bun": "latest"
